@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<div style="color:#0000FF">
+    <h1>Welcome to my unicorn page</h1>
+    <h3>This page has lots of pretty unicorns</h3>
+</div>
+<body>
+<tr th:each="unicorn : ${unicorns}">
+    <td th:text="${us}">id</td>
+    <img src="https://thumb7.shutterstock.com/display_pic_with_logo/1103921/541837735/stock-vector-magic-cute-unicorn-stars-clouds-and-moon-poster-greeting-card-vector-illustration-with-outline-541837735.jpg" width="328" height="343" style="margin-top: 35px;" alt="unicorn picture"/>
+</tr>
+</body>
+</html>>
